@@ -1,9 +1,8 @@
-import "./Index.css";
-import Card from "./components/Card";
-import DualText from "./components/dualText";
-import AppleIntelligence from "./components/AppleIntelligence";
-
 import './App.css'
+import "./index.css"
+import Card from "./components/Card"
+import DualText from "./components/dualText"
+import AppleIntelligence from "./components/AppleIntelligence"
 import Navbar from './components/Navbar'
 import OfferBanner from './components/OfferBanner'
 import Difference from './components/Difference'
@@ -13,10 +12,15 @@ function App() {
   return (
     <>
       <div className="antialiased bg-[#f5f5f7] w-full h-screen">
+      <Navbar />
+      <OfferBanner />
+      <Categories />
+      <Difference />
         <div className="flex flex-col">
           <div className="pb-6">
             <DualText
               highlightText="Help is here"
+              textColor='#ff3c26'
               greyText="Whenever and however you need it"
             />
           </div>
@@ -32,7 +36,7 @@ function App() {
 
             <Card
               tag="TODAY AT APPLE"
-              title={"Join free sessions at your Apple Store."}
+              title={AppleIntelligence()}
               description="Learn about the latest features and how to go further with your Apple devices."
               image={"src/assets/apple-img/store-card-50-TAA-202310.jpeg"}
             />
@@ -45,24 +49,11 @@ function App() {
                 "src/assets/apple-img/iphone-card-40-business-202409_GEO_IN.jpeg"
               }
             />
-
-            {/* <Card
-            tag="PERSONAL SETUP"
-            title="Set up your new device with help from a Specialist."
-            description="Let us guide you through data transfer, the latest features and more, in an online, one-to-one session."
-            image={"src/assets/apple-img/store-card-50-personal-setup-202408.webp"}
-            /> */}
           </div>
         </div>
       </div>
     </>
-  );
-      <Navbar />
-      <OfferBanner />
-      <Categories />
-      <Difference />
-    </>
-  )
-}
+  )};
+    
 
 export default App;

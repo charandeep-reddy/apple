@@ -1,3 +1,4 @@
+import ScrollTemplate from "./ScrollTemplate";
 function Difference() {
   const differenceData = [
     {
@@ -88,29 +89,23 @@ function Difference() {
     },
   ];
   return (
-    <div className="w-full overflow-x-auto scroll-smooth scrollbar-hide snap-x py-4">
-      <div className="flex gap-5 items-stretch justify-center w-max">
-        <div className="w-[calc(17vw-155px)] snap-end" aria-hidden="true"></div>
-        {differenceData.map((item, index) => (
-          <div
-            key={index}
-            className="flex flex-col snap-always snap-end scroll-mr-27 w-[310px] transition-all duration-300 hover:scale-[1.03] hover:shadow-2xl cursor-pointer justify-start bg-white p-7 rounded-2xl"
-            style={{
-              boxShadow: "2px 4px 12px #00000014",
-              transitionTimingFunction: "cubic-bezier(0, 0, 0.5, 1)",
-            }}
-          >
-            <a href={item.path} className="pb-2">
-              {item.image}
-            </a>
-            <p className="text-2xl font-semibold text-[#1d1d1f]">
-              {item.description}
-            </p>
-          </div>
-        ))}
-        <div className="w-[calc(17vw-155px)] snap-end" aria-hidden="true"></div>
+    <ScrollTemplate children={differenceData.map((item, index) => (
+      <div
+        key={index}
+        className="flex flex-col snap-always snap-end scroll-mr-27 w-[310px] transition-all duration-300 hover:scale-[1.03] hover:shadow-2xl cursor-pointer justify-start bg-white p-7 rounded-2xl"
+        style={{
+          boxShadow: "2px 4px 12px #00000014",
+          transitionTimingFunction: "cubic-bezier(0, 0, 0.5, 1)",
+        }}
+      >
+        <a href={item.path} className="pb-2">
+          {item.image}
+        </a>
+        <p className="text-2xl font-semibold text-[#1d1d1f]">
+          {item.description}
+        </p>
       </div>
-    </div>
+    ))}/>
   );
 }
 

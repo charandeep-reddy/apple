@@ -7,6 +7,7 @@ import airtags from "../assets/apple-img/Category-assets/airtags.webp";
 import airpods from "../assets/apple-img/Category-assets/airpods.webp";
 import appleTv from "../assets/apple-img/Category-assets/appleTv.webp";
 import accessories from "../assets/apple-img/Category-assets/accessories.webp";
+import ScrollTemplate from "./ScrollTemplate";
 
 function Categories() {
   const categoriesData = [
@@ -19,32 +20,26 @@ function Categories() {
     { image: appleTv, path: "#", categoryName: "Apple TV 4K" },
     { image: homepod, path: "#", categoryName: "HomePod" },
     { image: accessories, path: "#", categoryName: "Accessories" },
+    { image: "", path: "", categoryName: "" },
   ];
   return (
-    <div className="w-full overflow-x-auto scroll-smooth scrollbar-hide snap-x py-4">
-      <div className="flex gap-5 items-stretch justify-center w-max">
-      <div className="w-[calc(17vw-155px)] snap-end" aria-hidden="true"></div>
-        {categoriesData.map((category, index) => (
-          <div
-            key={index}
-            className="flex flex-col items-center gap-3 min-w-[100px]"
-          >
-            <img
-              src={category.image}
-              alt={category.categoryName}
-              className="w-30"
-            />
-            <a
-              href={category.path}
-              className="hover:underline text-sm text-[#1d1d1f] font-medium tracking-wide"
-            >
-              {category.categoryName}
-            </a>
-          </div>
-        ))}
-        <div className="w-[calc(17vw-155px)] snap-end" aria-hidden="true"></div>
+    <ScrollTemplate children={categoriesData.map((category, index) => (
+      <div
+        key={index}
+        className="flex flex-col items-center snap-end gap-3 min-w-[100px]">
+        <img
+          src={category.image}
+          alt={category.categoryName}
+          className="w-30"
+        />
+        <a
+          href={category.path}
+          className="hover:underline text-sm text-[#1d1d1f] font-medium tracking-wide"
+        >
+          {category.categoryName}
+        </a>
       </div>
-    </div>
+    ))}/>
   );
 }
 

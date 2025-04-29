@@ -26,7 +26,7 @@ function Navbar(){
         { image: item9, path: "#", alt: "accessories" },
         { image: item10, path: "#", alt: "support" },
         { image: magnify, path: "#", alt: "magnify" },
-        { image: bag, path: "#", alt: "bag" },
+        { image: bag, path: "#", alt: "bag" }, 
     ];
     return(
         <nav className="flex justify-center items-center bg-[#f5f5f7] h-11">
