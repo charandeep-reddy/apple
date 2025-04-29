@@ -1,9 +1,16 @@
 import './App.css'
+import Navbar from './components/Navbar'
+import OfferBanner from './components/OfferBanner'
+import Difference from './components/Difference'
+import Categories from './components/Categories'
 
 function App() {
   return (
     <>
-      <h1 className='text-center'>Apple</h1>
+      <Navbar />
+      <OfferBanner />
+      <Categories />
+      <Difference />
     </>
   )
 }
