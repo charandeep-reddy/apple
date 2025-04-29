@@ -1,5 +1,22 @@
+@font-face {
+    font-family: 'SF Pro Text';
+    src: url("./assets/fonts/SF-Pro-Text.otf");
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url("./assets/fonts/SF-Pro-Display.otf");
+}
+
 @import "tailwindcss";
 
+@theme{
+    --color-apple-grey: #6e6e73;
+    --tracking-small: 0.007em;
+    --font-apple-text : 'SF Pro Text';
+    --color-apple-black: #1d1d1f;
+    --font-apple-display : 'SF Pro Display';
+}
 body{
     background-color: #f5f5f7;
 }
