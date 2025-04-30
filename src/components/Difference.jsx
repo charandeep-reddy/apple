@@ -1,4 +1,4 @@
-import ScrollTemplate from "./ScrollTemplate";
+import Carousel from "./Carousel";
 function Difference() {
   const differenceData = [
     {
@@ -21,7 +21,11 @@ function Difference() {
       ),
       path: "#",
       alt: "delivery",
-      description: "Enjoy free delivery, or easy pickup from an Apple Store.",
+      description: (
+        <>
+          <span>Enjoy free delivery, or easy pickup</span> from an Apple Store.
+        </>
+      ),
     },
 
     {
@@ -35,8 +39,12 @@ function Difference() {
       ),
       path: "#",
       alt: "customisation",
-      description:
-        "Customise their Mac with everything from graphics to storage.",
+      description: (
+        <>
+          <span>Customise their Mac</span> with{" "}
+          <span>everything from graphics</span> to <span> storage.</span>
+        </>
+      ),
     },
 
     {
@@ -48,8 +56,12 @@ function Difference() {
       ),
       path: "#",
       alt: "engraving",
-      description:
-        "Make it theirs. Engrave a mix of emoji, names and numbers for free.",
+      description: (
+        <>
+          Make it theirs.{" "}
+          <span>Engrave a mix of emoji, names and numbers for free.</span>
+        </>
+      ),
     },
     {
       image: (
@@ -60,8 +72,12 @@ function Difference() {
       ),
       path: "#",
       alt: "trade-in",
-      description:
-        "Exchange your smartphone, get ₹5000.00 - ₹67500.00 in credit towards a new one. *",
+      description: (
+        <>
+          <span>Exchange your smartphone,</span> get ₹5000.00 - ₹67500.00 in
+          credit towards a new one.*
+        </>
+      ),
     },
     {
       image: (
@@ -72,8 +88,12 @@ function Difference() {
       ),
       path: "#",
       alt: "personalised",
-      description:
-        "Get a personalised shopping experience in the Apple Store app.",
+      description: (
+        <>
+          Get a <span>personalised shopping</span> experience in the{" "}
+          <span>Apple Store app</span>.
+        </>
+      ),
     },
     {
       image: (
@@ -84,28 +104,36 @@ function Difference() {
       ),
       path: "#",
       alt: "instant credit",
-      description:
-        "Trade in your eligible Mac, Apple Watch or iPad for instant credit.* In-store only.",
+      description: (
+        <>
+          <span>
+            Trade in your eligible Mac, Apple Watch or iPad for instant credit.*
+          </span>{" "}
+          In-store only.
+        </>
+      ),
     },
   ];
   return (
-    <ScrollTemplate children={differenceData.map((item, index) => (
-      <div
-        key={index}
-        className="flex flex-col snap-always snap-end scroll-mr-27 w-[310px] transition-all duration-300 hover:scale-[1.03] hover:shadow-2xl cursor-pointer justify-start bg-white p-7 rounded-2xl"
-        style={{
-          boxShadow: "2px 4px 12px #00000014",
-          transitionTimingFunction: "cubic-bezier(0, 0, 0.5, 1)",
-        }}
-      >
-        <a href={item.path} className="pb-2">
-          {item.image}
-        </a>
-        <p className="text-2xl font-semibold text-[#1d1d1f]">
-          {item.description}
-        </p>
-      </div>
-    ))}/>
+    <Carousel
+      children={differenceData.map((item, index) => (
+        <div
+          key={index}
+          className="flex flex-col items-stretch snap-always snap-end scroll-mr-20 w-[260px]  scroll-font transition-all duration-300 hover:scale-[1.03] hover:shadow-4xl cursor-pointer justify-start bg-white px-7 pt-5 pb-4 box-content rounded-2xl"
+          style={{
+            boxShadow: "2px 4px 12px #00000014",
+            transitionTimingFunction: "cubic-bezier(0, 0, 0.5, 1)",
+          }}
+        >
+          <a href={item.path} className="pb-2">
+            {item.image}
+          </a>
+          <p className="text-[1.45em] leading-7 tracking-normal font-[600] difference-card text-[#1d1d1f]">
+            {item.description}
+          </p>
+        </div>
+      ))}
+    />
   );
 }
 

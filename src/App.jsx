@@ -7,6 +7,7 @@ import Navbar from './components/Navbar'
 import OfferBanner from './components/OfferBanner'
 import Difference from './components/Difference'
 import Categories from './components/Categories'
+import Help from './components/Help'
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <div className="antialiased bg-[#f5f5f7] w-full h-screen">
       <Navbar />
       <OfferBanner />
+      <Help/>
       <Categories />
       <Difference />
         <div className="flex flex-col">

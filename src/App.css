@@ -9,4 +9,10 @@
     scrollbar-width: none; 
   }
 
-  
+  .scroll-font{
+    font-family: var(--font-apple-Display);
+  }
+
+  .difference-card span{
+    color: #ff3c26;
+  }

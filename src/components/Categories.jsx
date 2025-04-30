@@ -7,7 +7,7 @@ import airtags from "../assets/apple-img/Category-assets/airtags.webp";
 import airpods from "../assets/apple-img/Category-assets/airpods.webp";
 import appleTv from "../assets/apple-img/Category-assets/appleTv.webp";
 import accessories from "../assets/apple-img/Category-assets/accessories.webp";
-import ScrollTemplate from "./ScrollTemplate";
+import Carousel from "./Carousel";
 
 function Categories() {
   const categoriesData = [
@@ -23,7 +23,7 @@ function Categories() {
     { image: "", path: "", categoryName: "" },
   ];
   return (
-    <ScrollTemplate children={categoriesData.map((category, index) => (
+    <Carousel children={categoriesData.map((category, index) => (
       <div
         key={index}
         className="flex flex-col items-center snap-end gap-3 min-w-[100px]">
@@ -34,7 +34,7 @@ function Categories() {
         />
         <a
           href={category.path}
-          className="hover:underline text-sm text-[#1d1d1f] font-medium tracking-wide"
+          className="hover:underline text-sm text-[#1d1d1f] font-medium"
         >
           {category.categoryName}
         </a>
