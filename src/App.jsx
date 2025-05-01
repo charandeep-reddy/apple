@@ -1,13 +1,15 @@
 import './App.css'
 import "./index.css"
 import Card from "./components/Card"
-import DualText from "./components/dualText"
+import DualText from "./components/DualText"
 import AppleIntelligence from "./components/AppleIntelligence"
 import Navbar from './components/Navbar'
 import OfferBanner from './components/OfferBanner'
 import Difference from './components/Difference'
 import Categories from './components/Categories'
-import Help from './components/Help'
+import QuickLinks from './components/QuickLinks'
+import Latest from './components/Latest'
+import Hero from './components/Hero'
 
 function App() {
   return (
@@ -15,10 +17,13 @@ function App() {
       <div className="antialiased bg-[#f5f5f7] w-full h-screen">
       <Navbar />
       <OfferBanner />
-      <Help/>
+      <Hero/>
       <Categories />
+      <Latest/>
       <Difference />
-        <div className="flex flex-col">
+      <QuickLinks/>
+      
+        {/* <div className="flex flex-col">
           <div className="pb-6">
             <DualText
               highlightText="Help is here"
@@ -52,7 +57,7 @@ function App() {
               }
             />
           </div>
-        </div>
+        </div> */}
       </div>
     </>
   )};

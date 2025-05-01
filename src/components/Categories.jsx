@@ -7,7 +7,6 @@ import airtags from "../assets/apple-img/Category-assets/airtags.webp";
 import airpods from "../assets/apple-img/Category-assets/airpods.webp";
 import appleTv from "../assets/apple-img/Category-assets/appleTv.webp";
 import accessories from "../assets/apple-img/Category-assets/accessories.webp";
-import Carousel from "./Carousel";
 
 function Categories() {
   const categoriesData = [
@@ -20,13 +19,16 @@ function Categories() {
     { image: appleTv, path: "#", categoryName: "Apple TV 4K" },
     { image: homepod, path: "#", categoryName: "HomePod" },
     { image: accessories, path: "#", categoryName: "Accessories" },
-    { image: "", path: "", categoryName: "" },
   ];
   return (
-    <Carousel children={categoriesData.map((category, index) => (
+    <div className="overflow-x-auto whitespace-nowrap scrollbar-hide p-6 mb-10">
+  <div className="flex justify-start items-center gap-7">
+  <div className="w-[calc(21vw-155px)] snap-end" aria-hidden="true"></div>
+    {categoriesData.map((category, index) => (
       <div
         key={index}
-        className="flex flex-col items-center snap-end gap-3 min-w-[100px]">
+        className="flex flex-col items-center gap-3 min-w-[100px] shrink-0"
+      >
         <img
           src={category.image}
           alt={category.categoryName}
@@ -39,7 +41,11 @@ function Categories() {
           {category.categoryName}
         </a>
       </div>
-    ))}/>
+    ))}
+    <div className="w-[30px] snap-end" aria-hidden="true"></div>
+  </div>
+</div>
+
   );
 }
 

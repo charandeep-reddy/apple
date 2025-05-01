@@ -16,3 +16,7 @@
   .difference-card span{
     color: #ff3c26;
   }
+
+  .bg-custom{
+    background-image: linear-gradient(108deg, #0090f7 0, #ba62fc 34%, #f2416b 68%, #f55600 100%);
+  }
