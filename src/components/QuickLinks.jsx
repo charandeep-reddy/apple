@@ -27,7 +27,7 @@ function QuickLinks() {
     { path: "#", text: "Your Saves" },
   ];
   return (
-    <div className="flex flex-col gap-3 ml-30">
+    <div className="flex flex-col gap-3 mx-[calc(19vw-155px)]">
         <DualText highlightText={"Quick Links"}/>
     <div className="flex gap-3 items-center">
       {linksData.map((item, index) => {

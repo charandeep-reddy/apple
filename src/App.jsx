@@ -1,8 +1,5 @@
 import './App.css'
 import "./index.css"
-import Card from "./components/Card"
-import DualText from "./components/DualText"
-import AppleIntelligence from "./components/AppleIntelligence"
 import Navbar from './components/Navbar'
 import OfferBanner from './components/OfferBanner'
 import Difference from './components/Difference'
@@ -10,6 +7,13 @@ import Categories from './components/Categories'
 import QuickLinks from './components/QuickLinks'
 import Latest from './components/Latest'
 import Hero from './components/Hero'
+import Footer from './components/Footer'
+import FooterMenu from './components/FooterMenu'
+import Personalization from './components/Personlization'
+import Support from './components/Support'
+import AppleExperience from './components/AppleExperience'
+import Special from './components/Special'
+import Accessories from './components/Accessories'
 
 function App() {
   return (
@@ -20,8 +24,15 @@ function App() {
       <Hero/>
       <Categories />
       <Latest/>
+      <Accessories/>
+      <Personalization/>
       <Difference />
+      <Support/>
+      <AppleExperience/>
+      <Special/>
       <QuickLinks/>
+      <Footer/>
+      <FooterMenu/>
       
         {/* <div className="flex flex-col">
           <div className="pb-6">
@@ -33,12 +44,7 @@ function App() {
           </div>
 
           <div className="gap-6">
-            <Card
-              tag="APPLE SPECIALIST"
-              title="Shop one on one with a Specialist online."
-              image={
-                "src/assets/apple-img/store-card-50-earth-day-specialist-help-202504.jpeg"
-              }
+            
             />
 
             <Card

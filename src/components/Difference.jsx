@@ -128,7 +128,7 @@ function Difference() {
       children={differenceData.map((item, index) => (
         <div
           key={index}
-          className="flex flex-col items-stretch snap-always snap-end scroll-mr-20 w-[260px]  transition-all duration-300 hover:scale-[1.03] hover:shadow-4xl cursor-pointer justify-start bg-white px-7 pt-5 pb-4 box-content rounded-2xl"
+          className="flex flex-col items-stretch snap-always snap-end scroll-mr-15 w-[260px]  transition-all duration-300 hover:scale-[1.03] hover:shadow-4xl cursor-pointer justify-start bg-white px-7 pt-5 pb-4 box-content rounded-2xl"
           style={{
             boxShadow: "2px 4px 12px #00000014",
             transitionTimingFunction: "cubic-bezier(0, 0, 0.5, 1)",
