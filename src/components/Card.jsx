@@ -3,7 +3,7 @@ function Card({ tag, title, description, image, textColor = "#1D1D1F", width }) 
 
   return (
     <div
-      className={`md:w-[480px] w-[309px] h-[500px] overflow-hidden rounded-2xl bg-cover bg-center snap-always snap-end transition-all duration-300 hover:scale-[1.03] hover:shadow-4xl cursor-pointer`}
+      className={`max-md:w-[340px] w-[450px] h-[500px] overflow-hidden rounded-2xl bg-cover bg-no-repeat bg-center max-md:snap-center snap-always snap-end transition-all duration-300 hover:scale-[1.03] hover:shadow-4xl cursor-pointer`}
       style={{
         ...customStyle,
         boxShadow: "2px 4px 12px #00000014",

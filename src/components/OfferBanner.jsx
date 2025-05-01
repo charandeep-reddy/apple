@@ -2,7 +2,7 @@ import add from "../assets/apple-img/add.png";
 
 function OfferBanner() {
   return (
-    <div className="w-full bg-white px-4 py-2 flex justify-center h-15">
+    <div className="w-full bg-white px-4 py-2 flex justify-center min-h-15">
       <div className="max-w-screen-xl text-center text-[13.5px] text-[#1d1d1fd3] font-extralight flex flex-col sm:flex-row sm:items-center sm:justify-center gap-1 sm:gap-2">
         <span>
           Get up to 12 months of No Cost EMI<sup className="align-middle text-[9px] ">&sect;</sup> plus up to ₹8000.00 instant cashback<sup>&sect;&sect;</sup> on selected products with eligible cards.

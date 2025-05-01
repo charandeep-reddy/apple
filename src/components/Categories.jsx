@@ -21,9 +21,9 @@ function Categories() {
     { image: accessories, path: "#", categoryName: "Accessories" },
   ];
   return (
-    <div className="overflow-x-auto whitespace-nowrap scrollbar-hide p-6 mb-10">
+    <div className="overflow-x-auto whitespace-nowrap scrollbar-hide py-6 mb-10">
   <div className="flex justify-start items-center gap-7">
-  <div className="w-[calc(21vw-155px)] snap-end" aria-hidden="true"></div>
+  <div className="w-[calc(19vw-155px)] snap-end" aria-hidden="true"></div>
     {categoriesData.map((category, index) => (
       <div
         key={index}

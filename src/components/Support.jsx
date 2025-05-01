@@ -12,7 +12,7 @@ function Support() {
     
   return (
     <div className="mt-15">
-      <div className="mx-[calc(19vw-155px)] pb-2">
+      <div className="ml-[clamp(20px,calc(19vw-155px),150px)] pb-2">
         <DualText
           highlightText={"Help is here."}
           greyText={"Whenever and however you need it."}

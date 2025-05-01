@@ -25,7 +25,7 @@ function Help() {
   ];
 
   return (
-    <div className="flex flex-col items-center gap-3.5 justify-center">
+    <div className="flex flex-col items-start gap-3.5 justify-center">
       {helpData.map((item, index) => (
         <div className="flex items-center gap-2" key={index}>
           <img src={item.image} alt="persona" className="w-10 h-10" />

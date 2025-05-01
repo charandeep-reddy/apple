@@ -12,7 +12,7 @@ const Card2 = ({
 }) => {
   return (
     <div
-      className="h-full w-[400px] rounded-2xl object-contain relative transition-all duration-300 hover:scale-[1.03] hover:shadow-4xl cursor-pointer"
+      className="h-full w-[400px] max-md:h-full max-md:w-[330px] rounded-2xl object-contain relative transition-all duration-300 hover:scale-[1.03] hover:shadow-4xl cursor-pointer"
       style={{
         boxShadow: "2px 4px 12px #00000014",
         transitionTimingFunction: "cubic-bezier(0, 0, 0.5, 1)",

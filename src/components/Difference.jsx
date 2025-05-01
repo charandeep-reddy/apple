@@ -117,7 +117,7 @@ function Difference() {
   ];
   return (
     <div className="mt-12">
-      <div className="mx-[calc(19vw-155px)] pb-2">
+      <div className="ml-[clamp(20px,calc(19vw-155px),150px)] pb-2">
       <DualText
         highlightText={"The Apple Store difference."}
         textColor="#ff3c26"

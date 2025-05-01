@@ -1,5 +1,3 @@
-import React from "react";
-
 const FooterMenu = () => {
   return (
     <footer className="bg-gray-100 text-gray-600 text-xs px-4 py-10 md:px-20">
@@ -57,7 +55,11 @@ const FooterMenu = () => {
               <li>Ways to Buy</li>
             </ul>
           </div>
-          <div>
+        </div>
+
+        {/* Column 4 */}
+        <div className="space-y-6">
+        <div>
             <h4 className="font-semibold text-black">For Education</h4>
             <ul className="mt-2 space-y-1">
               <li>Apple and Education</li>
@@ -65,10 +67,6 @@ const FooterMenu = () => {
               <li>Shop for University</li>
             </ul>
           </div>
-        </div>
-
-        {/* Column 4 */}
-        <div className="space-y-6">
           <div>
             <h4 className="font-semibold text-black">For Business</h4>
             <ul className="mt-2 space-y-1">
@@ -105,6 +103,7 @@ const FooterMenu = () => {
             </ul>
           </div>
         </div>
+        <hr className="text-gray-300 w-full"/>
       </div>
     </footer>
   );
