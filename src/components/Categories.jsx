@@ -22,8 +22,8 @@ function Categories() {
   ];
   return (
     <div className="overflow-x-auto whitespace-nowrap scrollbar-hide py-6 mb-10">
-  <div className="flex justify-start items-center gap-7">
-  <div className="w-[calc(19vw-155px)] snap-end" aria-hidden="true"></div>
+  <div className="flex justify-start items-center gap-7 max-md:gap-3">
+  <div className="w-[calc(18vw-155px)] snap-end" aria-hidden="true"></div>
     {categoriesData.map((category, index) => (
       <div
         key={index}
@@ -32,7 +32,7 @@ function Categories() {
         <img
           src={category.image}
           alt={category.categoryName}
-          className="w-30"
+          className="w-30 max-md:w-22"
         />
         <a
           href={category.path}

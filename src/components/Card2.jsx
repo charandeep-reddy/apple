@@ -14,7 +14,7 @@ const Card2 = ({
 }) => {
   return (
     <div
-      className="h-full w-[400px] max-md:h-full max-md:w-[330px] rounded-2xl object-contain relative transition-all duration-300 hover:scale-[1.03] hover:shadow-4xl cursor-pointer"
+      className="h-full w-[400px] max-md:h-[450px] max-md:w-[330px] max-sm:w-[310px] rounded-2xl object-contain relative transition-all duration-300 hover:scale-[1.03] hover:shadow-4xl cursor-pointer"
       style={{
         boxShadow: "2px 4px 12px #00000014",
         transitionTimingFunction: "cubic-bezier(0, 0, 0.5, 1)",
@@ -27,8 +27,8 @@ const Card2 = ({
       />
       <div className="absolute top-2 m-3 px-4 py-5">
         <h1 className={`${textStyle0} font-bold`}>{text1}</h1>
-        <h1 className={`text-[26px] ${textStyle1} font-bold`}>{text2}</h1>
-        <h1 className={`${textStyle2} text-wrap font-[600] tracking-wide py-1`}>
+        <h1 className={`text-[26px] ${textStyle1} font-bold max-md:text-[20px]`}>{text2}</h1>
+        <h1 className={`${textStyle2} text-wrap font-[600] max-md:text-[20px] tracking-wide py-1`}>
           {description}
         </h1>
         <p className={`${textStyle1} font-light text-sm`}>From {price}.00</p>

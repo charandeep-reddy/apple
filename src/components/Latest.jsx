@@ -64,7 +64,7 @@ function Latest() {
         "Get up to 12 months of No Cost EMI § plus up to ₹8000.00 instant cashback  §§ on selected products with eligible cards.",
       textStyle1: "text-gray-600 invisible",
       textStyle0: "text-xs text-gray-600",
-      textStyle2: "text-black font-bold text-[26px] leading-7.5 pt-2",
+      textStyle2: "text-black font-bold text-[26px] max-md:text-[20px] leading-7.5 pt-2",
     },
     {
       new: "NEW",
@@ -110,7 +110,7 @@ function Latest() {
       description: "Show Your True Colors.",
       textStyle1: "text-black hidden",
       textStyle0: "text-xs text-gray-600",
-      textStyle2: "text-black font-bold text-[25px] pt-1.5",
+      textStyle2: "text-black font-bold text-[25px] max-md:text-[20px] pt-1.5",
     },
   ];
   return (

@@ -139,7 +139,7 @@ function Navbar() {
       ))}
     </div>
   
-    <div className="flex items-center gap-10">
+    <div className="flex items-center max-md:gap-7 gap-10">
       <Icons path="#" label="Search" image={iconsData[1]} />
       <Icons path="#" label="Bag" image={iconsData[2]} />
       <div className="lg:hidden">

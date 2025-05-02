@@ -141,7 +141,7 @@ function Difference() {
           <a href={item.path} className="pb-2">
             {item.image}
           </a>
-          <p className="text-[1.45em] leading-7 tracking-normal font-[600] difference-card text-[#1d1d1f]">
+          <p className="text-[1.45em] leading-7 max-md:text-[20px] tracking-normal font-[600] difference-card text-[#1d1d1f]">
             {item.description}
           </p>
         </div>
