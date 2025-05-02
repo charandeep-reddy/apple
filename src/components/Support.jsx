@@ -24,7 +24,6 @@ function Support() {
       tag: "BUSINESS",
       title: "From enterprise to small business, we’ll work with you.¹",
       image: business,
-      width: "400px",
       textColor: "white",
     },
     {
