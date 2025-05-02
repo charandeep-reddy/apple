@@ -10,10 +10,10 @@ export function Colors({src,alt}) {
   );
 }
 
-function Card3({ tag = "Free Engraving", price, productName, image, colors=(<>&nbsp;</>)}) {
+function Card3({ tag = "Free Engraving", price, productName, image, colors}) {
   return (
     <div
-      className="h-full w-80 max-md:w-[320px] flex flex-col items-start snap-start max-md:snap-none scroll-ml-30 transition-all duration-300 hover:scale-[1.03] hover:shadow-4xl cursor-pointer max-md:p-5 p-7 justify-between bg-white rounded-2xl"
+      className="h-full w-80 max-md:w-[320px] max-md:h-[450px] flex flex-col items-start snap-start max-md:snap-none scroll-ml-30 transition-all duration-300 hover:scale-[1.03] hover:shadow-4xl cursor-pointer max-md:p-5 p-7 justify-between bg-white rounded-2xl"
       style={{
         boxShadow: "2px 4px 12px #00000014",
         transitionTimingFunction: "cubic-bezier(0, 0, 0.5, 1)",
