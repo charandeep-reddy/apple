@@ -122,7 +122,7 @@ function Navbar() {
     </svg>,
   ];
   return (
-    <nav className="flex max-lg:justify-between justify-center gap-10 items-center max-md:px-5 bg-[#f5f5f7] min-h-11 ">
+    <nav className="flex max-lg:justify-between max-lg:px-10 justify-center gap-10 items-center max-md:px-5 bg-[#f5f5f7] min-h-11 ">
     <div className="flex items-center gap-10">
       <Icons path="/" label="logo" image={iconsData[0]} />
     </div>

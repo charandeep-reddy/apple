@@ -2,35 +2,39 @@ import Card from "./Card";
 import Carousel from "./Carousel";
 import DualText from "./DualText";
 import AppleIntelligence from "./AppleIntelligence";
+import yourself from  "../assets/apple-img/store-card-50-apple-intelligence-202503_GEO_IN.jpeg"
+import appletv from "../assets/apple-img/store-card-50-tv-services-202501.jpeg"
+import services from  "../assets/apple-img/store-card-50-subscriptions-202108.jpeg"
+import applecare from "../assets/apple-img/store-card-50-applecare-202503.jpeg"
+import homepod from "../assets/apple-img/store-card-50-homekit-202405_GEO_IN.jpeg"
 
 function AppleExperience() {
   const supportData = [
     {
       tag: <AppleIntelligence />,
       title: "Write, express yourself and get things done effortlessly.∆",
-      image:
-        "./src/assets/apple-img/store-card-50-apple-intelligence-202503_GEO_IN.jpeg",
+      image: yourself,
     },
     {
       tag: "APPLE TV+",
       title: "Get 3 months of Apple TV+ free when you buy an Apple device.°",
-      image: "./src/assets/apple-img/store-card-50-tv-services-202501.jpeg",
+      image: appletv,
     },
     {
       tag: "",
       title: "Four Apple services. One easy subscription.",
-      image: "./src/assets/apple-img/store-card-50-subscriptions-202108.jpeg",
+      image: services,
     },
     {
       title: " We’ve got you covered.",
       description:
         "AppleCare+ now comes with unlimited repairs for accidental damage protection.",
-      image: "./src/assets/apple-img/store-card-50-applecare-202503.jpeg",
+      image: applecare,
     },
     {
       tag: "HOME",
       title: "See how one app can control your entire home.",
-      image: "./src/assets/apple-img/store-card-50-homekit-202405_GEO_IN.jpeg",
+      image: homepod,
     },
   ];
 
