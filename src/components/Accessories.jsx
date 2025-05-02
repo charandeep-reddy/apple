@@ -13,6 +13,7 @@ import folio from "../assets/apple-img/ipadCase.jpeg"
 import beatscase from "../assets/apple-img/magSafeCase.jpeg"
 import sportband from "../assets/apple-img/strap.jpeg"
 import mothersday from "../assets/apple-img/mothersDay.jpeg"
+import accessories from "../assets/apple-img/store-card-40-accessories-explore-202503.jpeg"
 import { Colors } from "./Card3";
 import color1 from "../assets/apple-img/MX733_SW_COLOR.jpeg"
 import color2 from "../assets/apple-img/MX743_SW_COLOR.jpeg"
@@ -184,7 +185,7 @@ function Accessories() {
         })}
         <div className="flex-shrink-0">
           <Card2
-            image={"../assets/apple-img/store-card-40-accessories-explore-202503.jpeg"}
+            image={accessories}
             description={"Explore all accessories."}
             textStyle1="text-sm hidden"
             textStyle0="text-xs text-gray-600"
