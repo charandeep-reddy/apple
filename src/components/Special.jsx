@@ -16,7 +16,7 @@ function Special() {
         <Card
           tag={"EDUCATION"}
           title={"Buy a new Mac or iPad with education savings.¹"}
-          image={"src/assets/apple-img/store-card-40-bts-edu-macbook-air-ipad-air-202503.jpeg"}
+          image={"./src/assets/apple-img/store-card-40-bts-edu-macbook-air-ipad-air-202503.jpeg"}
           width="w-[400px] max-md:w-[350px]"
         />
       </div>

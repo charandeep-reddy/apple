@@ -5,52 +5,52 @@ import DualText from "./DualText";
 function Accessories() {
   const accessoriesData = [
     {
-      image: "src/assets/apple-img/airpods-max-select-202409-orange.jpeg",
+      image: "./src/assets/apple-img/airpods-max-select-202409-orange.jpeg",
       price: "59900",
       productName: "AirPods Max - Orange"
     },
     {
-      image: "src/assets/apple-img/MDGR4.jpeg",
+      image: "./src/assets/apple-img/MDGR4.jpeg",
       price: "4900",
       productName: "iPhone 16 Plus Silicone Case with MagSafe – Peony"
     },
     {
-      image: "src/assets/apple-img/homepod-mini-select-white-202110.jpeg",
+      image: "./src/assets/apple-img/homepod-mini-select-white-202110.jpeg",
       price: "10900",
       productName: "HomePod mini - White"
     },
     {
-      image: "src/assets/apple-img/MXMN3.jpeg",
+      image: "./src/assets/apple-img/MXMN3.jpeg",
       price: "9500",
       productName: "42mm Gold Milanese Loop"
     },
     {
-      image: "src/assets/apple-img/iphoneCase.jpeg",
+      image: "./src/assets/apple-img/iphoneCase.jpeg",
       price: "4900",
       productName: "iPhone 16 Pro Clear Case with MagSafe"
     },
     {
-      image: "src/assets/apple-img/beatsEarphones.jpeg",
+      image: "./src/assets/apple-img/beatsEarphones.jpeg",
       price: "29900",
       productName: "Powerbeats Pro 2 – High-Performance Earbuds – Electric Orange"
     },
     {
-      image: "src/assets/apple-img/airtagCase.jpeg",
+      image: "./src/assets/apple-img/airtagCase.jpeg",
       price: "3900",
       productName: "AirTag FineWoven Key Ring – Chartreuse"
     },
     {
-      image: "src/assets/apple-img/ipadCase.jpeg",
+      image: "./src/assets/apple-img/ipadCase.jpeg",
       price: "8500",
       productName: "Smart Folio for iPad (A16) - Watermelon"
     },
     {
-      image: "src/assets/apple-img/magSafeCase.jpeg",
+      image: "./src/assets/apple-img/magSafeCase.jpeg",
       price: "4900",
       productName: "Beats iPhone 16 Pro Max Case with MagSafe – Summit Stone"
     },
     {
-      image: "src/assets/apple-img/strap.jpeg",
+      image: "./src/assets/apple-img/strap.jpeg",
       price: "4500",
       productName: "40mm Aquamarine Sport Band - M/L"
     },
@@ -70,7 +70,7 @@ function Accessories() {
        <div className="flex-shrink-0">
           <Card2
             text1={"MOTHER’S DAY"}
-            image={"src/assets/apple-img/mothersDay.jpeg"}
+            image={"./src/assets/apple-img/mothersDay.jpeg"}
             description={"Pairs perfectly with Mom."}
             textStyle1="text-sm hidden"
             textStyle0="text-xs text-gray-600"
@@ -90,7 +90,7 @@ function Accessories() {
         })}
         <div className="flex-shrink-0">
           <Card2
-            image={"src/assets/apple-img/store-card-40-accessories-explore-202503.jpeg"}
+            image={"./src/assets/apple-img/store-card-40-accessories-explore-202503.jpeg"}
             description={"Explore all accessories."}
             textStyle1="text-sm hidden"
             textStyle0="text-xs text-gray-600"

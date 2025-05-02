@@ -3,11 +3,11 @@ import Carousel from "./Carousel";
 import DualText from "./DualText";
 function Support() {
     const supportData = [
-        {tag: "APPLE SPECIALIST",title: "Shop one on one with a Specialist online.",image: "src/assets/apple-img/store-card-50-earth-day-specialist-help-202504.jpeg"},
-        {tag: "TODAY AT APPLE",title: "Join free sessions at your Apple Store." ,description: "Learn about the latest features and how to go further with your Apple devices.",image: "src/assets/apple-img/store-card-50-TAA-202310.jpeg"},
-        {tag: "BUSINESS",title: "From enterprise to small business, we’ll work with you.¹" ,image: "src/assets/apple-img/iphone-card-40-business-202409_GEO_IN.jpeg", width: "400px", textColor: "white"},
-        {tag: "PERSONAL SETUP",title: "Set up your new device with help from a Specialist." ,description: "Let us guide you through data transfer, the latest features and more, in an online, one-to-one session.",image: "src/assets/apple-img/store-card-50-personal-setup-202408.jpeg"},
-        {tag: " WATCH AND LEARN",title: "Need support? Our teams are here for you.",image: "src/assets/apple-img/apple-support-app-202308_GEO_IN.jpeg"},
+        {tag: "APPLE SPECIALIST",title: "Shop one on one with a Specialist online.",image: "./src/assets/apple-img/store-card-50-earth-day-specialist-help-202504.jpeg"},
+        {tag: "TODAY AT APPLE",title: "Join free sessions at your Apple Store." ,description: "Learn about the latest features and how to go further with your Apple devices.",image: "./src/assets/apple-img/store-card-50-TAA-202310.jpeg"},
+        {tag: "BUSINESS",title: "From enterprise to small business, we’ll work with you.¹" ,image: "./src/assets/apple-img/iphone-card-40-business-202409_GEO_IN.jpeg", width: "400px", textColor: "white"},
+        {tag: "PERSONAL SETUP",title: "Set up your new device with help from a Specialist." ,description: "Let us guide you through data transfer, the latest features and more, in an online, one-to-one session.",image: "./src/assets/apple-img/store-card-50-personal-setup-202408.jpeg"},
+        {tag: " WATCH AND LEARN",title: "Need support? Our teams are here for you.",image: "./src/assets/apple-img/apple-support-app-202308_GEO_IN.jpeg"},
     ]
     
   return (
