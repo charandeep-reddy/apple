@@ -1,4 +1,5 @@
 import DualText from "./DualText";
+import Carousel from "./Carousel";
 function LinksButton({ path, text }) {
   return (
     <div className="inline-block border rounded-3xl w-fit hover:bg-[#1f1f1f] group">
@@ -27,13 +28,19 @@ function QuickLinks() {
     { path: "#", text: "Your Saves" },
   ];
   return (
-    <div className="flex flex-col gap-5 ml-[clamp(20px,calc(19vw-155px),150px)]">
-        <DualText highlightText={"Quick Links"}/>
-    <div className="flex gap-3 items-center overflow-scroll scrollbar-hide whitespace-nowrap">
-      {linksData.map((item, index) => {
-        return <LinksButton key={index} path={item.path} text={item.text} />;
-      })}
-    </div>
+    <div className="flex flex-col gap-5">
+      <div className="ml-[clamp(20px,calc(19vw-155px),150px)]">
+        <DualText highlightText={"Quick Links"} />
+      </div>
+      <Carousel>
+        <div className="flex gap-3 items-center overflow-scroll scrollbar-hide whitespace-nowrap">
+          {linksData.map((item, index) => {
+            return (
+              <LinksButton key={index} path={item.path} text={item.text} />
+            );
+          })}
+        </div>
+      </Carousel>
     </div>
   );
 }
