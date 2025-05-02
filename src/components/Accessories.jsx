@@ -13,57 +13,136 @@ import folio from "../assets/apple-img/ipadCase.jpeg"
 import beatscase from "../assets/apple-img/magSafeCase.jpeg"
 import sportband from "../assets/apple-img/strap.jpeg"
 import mothersday from "../assets/apple-img/mothersDay.jpeg"
+import { Colors } from "./Card3";
+import color1 from "../assets/apple-img/MX733_SW_COLOR.jpeg"
+import color2 from "../assets/apple-img/MX743_SW_COLOR.jpeg"
+import color3 from "../assets/apple-img/MX753_SW_COLOR.jpeg"
+import color4 from "../assets/apple-img/MDGU4_SW_COLOR.jpeg"
+import color5 from "../assets/apple-img/MDGV4_SW_COLOR.jpeg"
 function Accessories() {
   const accessoriesData = [
     {
+      tag: "New Colours",
       image: airpodsMax,
       price: "59900",
-      productName: "AirPods Max - Orange"
+      productName: "AirPods Max - Orange",
+      colors: [
+        {src:color1, alt:"gary"},
+        {src:color2, alt:"orange"},
+        {src:color4, alt:"gary"},
+        {src:color3, alt:"gary"},
+        {src:color5, alt:"gary"},
+      ]
     },
     {
+      tag: "New",
       image: iphone16plus,
       price: "4900",
-      productName: "iPhone 16 Plus Silicone Case with MagSafe – Peony"
+      productName: "iPhone 16 Plus Silicone Case with MagSafe – Peony",
+       colors: [
+        {src:color1, alt:"gary"},
+        {src:color2, alt:"orange"},
+        {src:color4, alt:"gary"},
+        {src:color3, alt:"gary"},
+        {src:color5, alt:"gary"},
+      ]
     },
     {
+      tag: (<>&nbsp;</>),
       image: homepodmini,
       price: "10900",
-      productName: "HomePod mini - White"
+      productName: "HomePod mini - White",
+       colors: [
+        {src:color1, alt:"gary"},
+        {src:color2, alt:"orange"},
+        {src:color4, alt:"gary"},
+        {src:color3, alt:"gary"},
+        {src:color5, alt:"gary"},
+      ]
     },
     {
+      tag: (<>&nbsp;</>),
       image: millanese,
       price: "9500",
-      productName: "42mm Gold Milanese Loop"
+      productName: "42mm Gold Milanese Loop",
+       colors: [
+        {src:color1, alt:"gary"},
+        {src:color2, alt:"orange"},
+        {src:color4, alt:"gary"},
+        {src:color3, alt:"gary"},
+        {src:color5, alt:"gary"},
+      ]
     },
     {
+      tag: (<>&nbsp;</>),
       image: magsafecase,
       price: "4900",
       productName: "iPhone 16 Pro Clear Case with MagSafe"
     },
     {
+      tag: "New",
       image: powerbeats,
       price: "29900",
-      productName: "Powerbeats Pro 2 – High-Performance Earbuds – Electric Orange"
+      productName: "Powerbeats Pro 2 – High-Performance Earbuds – Electric Orange",
+       colors: [
+        {src:color1, alt:"gary"},
+        {src:color2, alt:"orange"},
+        {src:color4, alt:"gary"},
+        {src:color3, alt:"gary"},
+        {src:color5, alt:"gary"},
+      ]
     },
     {
+      tag: (<>&nbsp;</>),
       image: airtagcase,
       price: "3900",
-      productName: "AirTag FineWoven Key Ring – Chartreuse"
+      productName: "AirTag FineWoven Key Ring – Chartreuse",
+       colors: [
+        {src:color1, alt:"gary"},
+        {src:color2, alt:"orange"},
+        {src:color4, alt:"gary"},
+        {src:color3, alt:"gary"},
+        {src:color5, alt:"gary"},
+      ]
     },
     {
+      tag: "New",
       image: folio,
       price: "8500",
-      productName: "Smart Folio for iPad (A16) - Watermelon"
+      productName: "Smart Folio for iPad (A16) - Watermelon",
+       colors: [
+        {src:color1, alt:"gary"},
+        {src:color2, alt:"orange"},
+        {src:color4, alt:"gary"},
+        {src:color3, alt:"gary"},
+        {src:color5, alt:"gary"},
+      ]
     },
     {
+      tag: (<>&nbsp;</>),
       image: beatscase,
       price: "4900",
-      productName: "Beats iPhone 16 Pro Max Case with MagSafe – Summit Stone"
+      productName: "Beats iPhone 16 Pro Max Case with MagSafe – Summit Stone",
+       colors: [
+        {src:color1, alt:"gary"},
+        {src:color2, alt:"orange"},
+        {src:color4, alt:"gary"},
+        {src:color3, alt:"gary"},
+        {src:color5, alt:"gary"},
+      ]
     },
     {
+      tag: "New",
       image: sportband,
       price: "4500",
-      productName: "40mm Aquamarine Sport Band - M/L"
+      productName: "40mm Aquamarine Sport Band - M/L",
+       colors: [
+        {src:color1, alt:"gary"},
+        {src:color2, alt:"orange"},
+        {src:color4, alt:"gary"},
+        {src:color3, alt:"gary"},
+        {src:color5, alt:"gary"},
+      ]
     },
   
   ];
@@ -92,9 +171,13 @@ function Accessories() {
           return (
             <div className="flex-shrink-0" key={index}>
               <Card3
+              tag={item.tag}
                 productName={item.productName}
                 image={item.image}
                 price={item.price}
+                colors={item.colors?.map((color, i) => (
+                  <Colors key={i} src={color.src} alt={color.alt} />
+                ))}
               />
             </div>
           );
@@ -113,13 +196,4 @@ function Accessories() {
   );
 }
 
-// {
-//       new: "APPLE WATCH STRAPS",
-//       brand: "",
-//       image: watchstraps,
-//       description: "Show Your True Colors.",
-//       textStyle1: "text-black hidden",
-//       textStyle0: "text-xs text-gray-600",
-//       textStyle2: "text-black font-bold text-[25px] pt-1.5",
-//     },
 export default Accessories;

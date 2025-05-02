@@ -18,7 +18,7 @@ function Special() {
           tag={"EDUCATION"}
           title={"Buy a new Mac or iPad with education savings.¹"}
           image={macair}
-          width="w-[400px] max-md:w-[350px]"
+          width="400px"
         />
       </div>
       </Carousel>

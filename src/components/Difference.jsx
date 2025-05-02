@@ -10,7 +10,11 @@ function Difference() {
       ),
       path: "#",
       alt: "Debit card",
-      description: "No Cost EMI.Plus Instant Cashback.",
+      description: (
+        <>
+        No Cost EMI.<sup className="text-sm align-middle">§</sup> Plus Instant Cashback.<sup className="text-sm align-middle">§§</sup>
+        </>
+      ),
     },
 
     {

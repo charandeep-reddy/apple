@@ -5,7 +5,9 @@ const Card2 = ({
   text2,
   price,
   image,
-  description,
+  description=(
+    <>Apple Intelligence<span className="text-xs  align-text-top">∆</span></>
+  ),
   textStyle1,
   textStyle2,
   textStyle0,

@@ -12,7 +12,11 @@ function AppleExperience() {
   const supportData = [
     {
       tag: <AppleIntelligence />,
-      title: "Write, express yourself and get things done effortlessly.∆",
+      title: (
+        <>
+        Write, express yourself and get things done effortlessly.<span className="text-[17px]  align-text-top">∆</span>
+        </>
+      ),
       image: yourself,
     },
     {
